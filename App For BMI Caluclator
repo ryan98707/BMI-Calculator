@@ -1,0 +1,52 @@
+import java.util.Scanner;
+public class BMICalc_App {
+	
+	
+
+	public static void main ( String []  args ){
+		Scanner keyboard = new Scanner(System.in);	
+
+		double weight;
+		double height = 0;
+	
+		BMICalc Height = new BMICalc(0, 0);
+		
+		System.out.println("PLease Enter Youe Height in Meters: ");
+		height = keyboard.nextDouble();
+		Height.setHeight(height);
+		
+		System.out.println("PLease Enter Your Weight in Kg: ");
+		weight = keyboard.nextDouble();
+		Height.setWeight(weight);
+		
+	
+		Height.getHeighttimeheight();
+		
+		if(Height.getAnswer() < 18.5 ){
+			
+			System.out.println("You are Under Weight " + Height.getAnswer());
+		}
+		else if(Height.getAnswer() > 18.5 && Height.getAnswer() < 24.9 ){
+			
+			System.out.println("You are a healthy Weight: " + Height.getAnswer());
+		}
+		else if (Height.getAnswer() >= 25 && Height.getAnswer() <= 29.9 ){
+			System.out.println("You are Over Weight: " + Height.getAnswer());
+		}
+		
+		else if (Height.getAnswer() >= 30 ){
+			System.out.println(" You Are Obese Your BMI is: " + Height.getAnswer());
+			
+		}
+			
+		}
+			
+			
+			
+		}
+			
+			
+	
+		
+		
+
