@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class BMICalc {
+	
+	private double height;
+	private double weight;
+	private double answer;
+	private double heighttimeheight;
+	
+	
+	public BMICalc(int height, int weight){
+		this.height = height;
+		this.weight = weight;
+		
+	}
+
+	public void setHeight(double height){
+		this.height = height;
+	}
+	
+	public void setWeight(double weight){
+		this.weight = weight;
+	}
+	
+	public double getHeight(){
+		return height;
+	}
+	
+	public double getWeight(){
+		return weight;
+	}
+	
+	public void setAnswer(double answer) {
+		this.answer = answer;
+	}
+
+	public double getAnswer() {
+
+		answer = weight / heighttimeheight;
+		return answer;
+	
+	}
+	public void setHeighttimeheight(double heighttimeheight) {
+		this.heighttimeheight = heighttimeheight;
+	}
+
+	public double getHeighttimeheight() {
+		heighttimeheight = height * height;
+		
+		return heighttimeheight;
+	}
+		
+		
+	
+	
+}
